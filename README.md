@@ -7,4 +7,6 @@ This project implements the [OSDev](https://wiki.osdev.org) [Bare Bones](https:/
 - While not as critical as in the case of using a GCC toolchain, a toolchain file is still important to make sure CLion is adhering to the stringent compilation requirements of OS kernels.
 
 ## Using
+This setup has only been successfully tested on Ubuntu 24 Linux. I would recommend avoiding MacOS and Windows because attempting to bypass their target platform assumptions is a nightmare (especially MacOS).
+<br /><br />
 The toolchain file should be automatically specified by the IDEA configuration. If not, manually specify it by adding `-DCMAKE_TOOLCHAIN_FILE=toolchain.cmake` to `Settings -> Build, Execution and Deployment -> CMake -> CMake Options:`
